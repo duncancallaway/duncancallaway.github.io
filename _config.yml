@@ -20,8 +20,8 @@ author: Duncan Callaway
 ###############################################
 
 navbar-links:
-  Research: "Rsearch"
-  People: "People"
+  Research: "research"
+  People: "people"
   ERG: "https://erg.berkeley.edu/"
   # Author's home: "https://deanattali.com"
 
