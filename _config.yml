@@ -286,6 +286,12 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+  -
+    scope:
+      path: ""
+      type: "students"
+    values:
+      layout: "student"
 
 # Exclude these files from production site
 exclude:
@@ -305,3 +311,19 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
+
+################################
+# --- Custom Collections --- #
+################################
+
+collections:
+  students:
+    output: true
+    permalink: /people/:path/
+
+###############################
+# --- Site-wide custom CSS --- #
+###############################
+
+site-css:
+  - "/assets/css/students.css"

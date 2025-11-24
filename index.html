@@ -11,3 +11,14 @@ We frequently collaborate with people in other organizations, including industry
 EMAC alumni have gone into consulting, the private sector, government research, and academia.
 
 Our website was recently compromised in a larger security incident, and we're still getting things back up and running. 
+
+<h2>Students</h2>
+<div class="student-grid">
+  {% assign students = site.students | sort: 'title' %}
+  {% for student in students %}
+    {% include student-card.html student=student %}
+  {% endfor %}
+  {% if students == empty %}
+    <p>No students listed yet. Add Markdown files under <code>_students/</code> to populate this section.</p>
+  {% endif %}
+  </div>
