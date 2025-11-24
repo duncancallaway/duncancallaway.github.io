@@ -55,8 +55,22 @@ Static website for the EMAC group, built with Jekyll. The site uses the Beautifu
   Short bio or description.
   ```
 
-- Each student page is generated at `/people/<filename>/` and the homepage and People page automatically list all students with links to their pages.
+- Each student page is generated at `/people/<filename>/` and the homepage and People page automatically list all current students and alumni with links to their pages.
 - Student cards fall back to `/assets/img/avatar-icon.png` if no `photo` is provided.
+
+#### Marking alumni
+
+- To show someone under Alumni, add `alumni: true` in their front matter:
+
+  ```yaml
+  ---
+  title: John Smith
+  role: PhD, 2024
+  alumni: true
+  ---
+  ```
+
+- Current students should either omit `alumni` or set it to `false`.
 
 ## Continuous Integration
 
