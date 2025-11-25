@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Energy Modeling, Analysis, and Control
+title: EMAC
 
 # Your name to show in the footer
 author: Duncan Callaway
@@ -23,9 +23,11 @@ remote_theme: daattali/beautiful-jekyll
 ###############################################
 
 navbar-links:
-  Research: "research"
+  Home: "/"
   People: "people"
-  ERG: "https://erg.berkeley.edu/"
+  Research: "research"
+  Teaching: "teaching"
+  News: "news"
   # Author's home: "https://deanattali.com"
 
 ################
@@ -41,7 +43,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: /path/to/image
+# title-img: /path/to/image
 
 
 #####################################
