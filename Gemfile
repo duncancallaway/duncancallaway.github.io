@@ -10,6 +10,8 @@ group :jekyll_plugins do
   gem "jekyll-remote-theme"
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
+  gem "jekyll-include-cache"
+  gem "jekyll-seo-tag"
 end
 
 # Needed for `jekyll serve` with Ruby 3+

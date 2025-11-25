@@ -15,19 +15,19 @@ title: EMAC
 # Your name to show in the footer
 author: Duncan Callaway
 
-# Use the Beautiful Jekyll theme via remote_theme (no local theme code)
-remote_theme: daattali/beautiful-jekyll
+# Use the Minimal Mistakes theme via remote_theme
+remote_theme: mmistakes/minimal-mistakes
+
+# Minimal Mistakes skin (theme variant)
+minimal_mistakes_skin: default
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
-navbar-links:
-  Home: "/"
-  People: "people"
-  Research: "research"
-  Teaching: "teaching"
-  News: "news"
+# Minimal Mistakes nav config (uses _data/navigation.yml)
+header:
+  nav: main
   # Author's home: "https://deanattali.com"
 
 ################
@@ -310,6 +310,8 @@ plugins:
   - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-include-cache
+  - jekyll-seo-tag
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
@@ -327,5 +329,4 @@ collections:
 # --- Site-wide custom CSS --- #
 ###############################
 
-site-css:
-  - "/assets/css/students.css"
+# Custom CSS is linked via _includes/head/custom.html for Minimal Mistakes
