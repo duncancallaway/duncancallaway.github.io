@@ -294,6 +294,8 @@ defaults:
       type: "students"
     values:
       layout: "student"
+      # Add a body class so we can hide the theme's default page title on student pages
+      classes: "no-page-title"
 
 # Exclude these files from production site
 exclude:

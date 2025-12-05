@@ -1,4 +1,9 @@
 /* Minimal styles for student cards and profile */
+/* Hide the generic page title from Minimal Mistakes on student pages only */
+body.no-page-title .page__title {
+  display: none;
+}
+
 .student-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -74,4 +79,3 @@
 .student-profile .student-links a {
   text-decoration: none;
 }
-
