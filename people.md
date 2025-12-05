@@ -4,7 +4,20 @@ title: People
 subtitle: 
 ---
 
-Here is where we'll introduce everyone in EMAC.
+EMAC (Energy, Modeling, Analysis and Controls) is led by Duncan Callaway. Learn more on his UC Berkeley profile.
+
+<div class="student-profile">
+  <div class="student-header">
+    <img class="student-photo" src="/assets/img/headshot_small_23.png" alt="Duncan Callaway" />
+    <div class="student-meta">
+      <h2 class="student-name">Duncan Callaway</h2>
+      <div class="student-role">EMAC Lab Lead</div>
+      <div class="student-links">
+        <a href="https://vcresearch.berkeley.edu/faculty/duncan-callaway" target="_blank" rel="noopener">UC Berkeley profile</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Students
 

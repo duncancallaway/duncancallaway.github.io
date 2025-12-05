@@ -1,14 +1,15 @@
 /* Site-wide typography overrides */
 
-/* Set Inter as the primary font and reduce base body size */
+/* Set Open Sans as the primary font and use UC Berkeley-aligned sizing */
 body,
 button,
 input,
 select,
 textarea {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
-  font-size: 0.875rem; /* ~14px, a few points smaller than default */
+  font-size: 1.2rem; /* UC Berkeley style alignment */
+  font-weight: 400;
 }
 
 /* Ensure headings also use Open Sans for a consistent look */
@@ -18,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
   font-weight: 700;
 }
