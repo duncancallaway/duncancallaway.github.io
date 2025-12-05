@@ -313,6 +313,11 @@ plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
 
+# Sass configuration
+# Silence deprecation warnings from theme/vendor Sass dependencies during build
+sass:
+  quiet_deps: true
+
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
