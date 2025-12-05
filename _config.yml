@@ -10,19 +10,24 @@
 ############################
 
 # Name of website
-title: Energy Modeling, Analysis, and Control
+title: EMAC
 
 # Your name to show in the footer
 author: Duncan Callaway
+
+# Use the Minimal Mistakes theme via remote_theme
+remote_theme: mmistakes/minimal-mistakes
+
+# Minimal Mistakes skin (theme variant)
+minimal_mistakes_skin: default
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
-navbar-links:
-  Research: "research"
-  People: "people"
-  ERG: "https://erg.berkeley.edu/"
+# Minimal Mistakes nav config (uses _data/navigation.yml)
+header:
+  nav: main
   # Author's home: "https://deanattali.com"
 
 ################
@@ -38,7 +43,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: /path/to/image
+# title-img: /path/to/image
 
 
 #####################################
@@ -283,6 +288,12 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+  -
+    scope:
+      path: ""
+      type: "students"
+    values:
+      layout: "student"
 
 # Exclude these files from production site
 exclude:
@@ -296,9 +307,26 @@ exclude:
   - docs/
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-include-cache
+  - jekyll-seo-tag
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
+################################
+# --- Custom Collections --- #
+################################
+
+collections:
+  students:
+    output: true
+    permalink: /people/:path/
+
+###############################
+# --- Site-wide custom CSS --- #
+###############################
+
+# Custom CSS is linked via _includes/head/custom.html for Minimal Mistakes

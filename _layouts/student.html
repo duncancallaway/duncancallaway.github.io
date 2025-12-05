@@ -1,0 +1,28 @@
+---
+layout: page
+---
+<div class="student-profile">
+  <div class="student-header">
+    {% assign photo_src = page.photo | default: '/assets/img/avatar-icon.png' %}
+    <img class="student-photo" src="{{ photo_src | relative_url }}" alt="{{ page.title }}" />
+    <div class="student-meta">
+      <h1 class="student-name">{{ page.title }}</h1>
+      {% if page.role %}<div class="student-role">{{ page.role }}</div>{% endif %}
+      <div class="student-links">
+        {% if page.email %}<a href="mailto:{{ page.email }}">{{ page.email }}</a>{% endif %}
+        {% if page.website %}
+          {% if page.email %} · {% endif %}
+          <a href="{{ page.website }}" target="_blank" rel="noopener">Website</a>
+        {% endif %}
+      </div>
+      {% if page.research %}
+        <div class="student-research"><strong>Research:</strong> {{ page.research }}</div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="student-content">
+    {{ content }}
+  </div>
+</div>
+

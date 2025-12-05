@@ -1,0 +1,12 @@
+{% assign s = include.student %}
+<article class="student-card">
+  <a class="student-card-link" href="{{ s.url | relative_url }}" aria-label="{{ s.title }}">
+    {% assign card_photo = s.photo | default: '/assets/img/avatar-icon.png' %}
+    <img class="student-card-photo" src="{{ card_photo | relative_url }}" alt="{{ s.title }}" />
+    <div class="student-card-body">
+      <h3 class="student-card-name">{{ s.title }}</h3>
+      {% if s.role %}<div class="student-card-role">{{ s.role }}</div>{% endif %}
+    </div>
+  </a>
+</article>
+
